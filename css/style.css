@@ -398,4 +398,7 @@ hr {
         white-space: normal;
         margin-top: 20px;
     }
+    .founder-msg .right {
+	margin-bottom: 25px;
+    }
 }
