@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 40px;
+    z-index: 9999;
+}
+
+header .logo {
+    width: 50px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-items li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 250px;
+    z-index: 1;
+    transition: all 0.5s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.dropdown-content .drop-list {
+    padding: 10px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-content .drop-list:hover {
+    color: #F9FBB2;
+    font-weight: 500;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.toggle-btn{
+	font-size: 30px;
+	color: #fff;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+    right: 30px;
+    position: absolute;
+}
+
+
+/* Home */
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.home .left {
+    margin-right: 20px;
+}
+
+.home h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: -10px;
+    animation: fadeIn 8s ease-out forwards;
+}
+
+.home h1:hover {
+    color: #B43E8F;
+}
+
+@keyframes fadeIn  {
+    0% {
+        
+        opacity: 0;
+    }
+    100% {
+        
+        opacity: 1;
+    }
+}
+
+.home h5 {
+    font-size: 30px;
+    font-weight: 600;
+    animation: colorChange 10s ease-in-out infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #390099;
+    }
+    25% {
+        color: #FF0054;
+    }
+    50% {
+        color: #9E0059;
+    }
+    75% {
+        color: #226F54;
+    }
+    100% {
+        color: #43291F;
+    }
+}
+
+.home .left p {
+    font-size: 18px;
+}
+
+.home .right {
+    margin-left: 20px;
+    width: 300px;
+}
+
+.home .right img {
+    width: 100%;
+}
+
+/* About us */
+
+.about-us {
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 0 30px;
+    padding-top: 50px;
+}
+
+.company-overview {
+    display: block;
+    margin-top: 40px;
+}
+
+.company-overview .company-heading {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 100px;
+    background-color: #5D707F;
+    height: 3px;
+    border: none;
+}
+
+.company-overview p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.company-overview .brand-value {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.brand-value h4 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.brand-value ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.brand-value ul li {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.brand-value ul li span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.mission-vision {
+    margin-top: 40px;
+    display: block;
+}
+
+.mission-vision .tittle {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mission-vision .mission-heading,
+.mission-vision .vision-heading {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.mission-vision .mission-text,
+.mission-vision .vision-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.founder-msg {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder-msg .left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.founder-msg .founder-tittle {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.founder-msg .founder-tittle span {
+    font-weight: 500;
+    color: #226F54;
+}
+
+.founder-msg .founder-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+    padding-bottom: 40px;
+}
+
+.founder-msg .right {
+    display: flex;
+    margin-right: 20px;
+}
+
+.founder-msg .right img {
+    width: 330px;
+}
+
+@media (max-width: 1024px) {
+    .home h1 {
+        font-size: 60px;
+    } 
+}
+
+@media (max-width: 850px) {
+    .home h1 {
+        font-size: 45px;
+    }
+    .home p {
+        font-size: 26px;
+    }
+    .toggle-btn{
+		display: block;
+	}
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        top: 80px;
+        left: 0;
+    }
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-items li {
+        display: flex;
+        flex-direction: column;
+    }
+    #menu-list {
+        display: none;
+    }
+    
+    .show-menu {
+        display: block;
+        transition: all 0.5s linear;
+    }
+    .founder-msg {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .founder-msg .left {
+        margin-right: 0;
+    }
+    .founder-msg .right {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .home h1 {
+        font-size: 45px;
+        width: 277px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .company-overview .company-heading,
+    .mission-vision .tittle,
+    .founder-msg .founder-tittle {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .home .left {
+        margin-top: 45px;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+    .home h5 {
+        font-size: 23px;
+        margin-top: 25px;
+    }
+    .home p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        white-space: normal;
+        margin-top: 20px;
+    }
+}
