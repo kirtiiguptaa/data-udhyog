@@ -110,23 +110,20 @@ nav {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0 30px;
-}
-
-.home .left {
-    margin-right: 20px;
+    justify-content: center;
+    background: url(https://www.madhavkrggroup.com/images/j-tmt.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .home h1 {
-    font-size: 70px;
+    font-size: 80px;
+    color: #fff;
     font-weight: 700;
-    margin-bottom: -10px;
     animation: fadeIn 8s ease-out forwards;
-}
-
-.home h1:hover {
-    color: #B43E8F;
+    margin-bottom: -20px;
 }
 
 @keyframes fadeIn  {
@@ -148,33 +145,25 @@ nav {
 
 @keyframes colorChange {
     0% {
-        color: #390099;
+        color: #defffc;
     }
     25% {
-        color: #FF0054;
+        color: #e7e5e5;
     }
     50% {
-        color: #9E0059;
+        color: #ccd5ff;
     }
     75% {
-        color: #226F54;
+        color: #c4fff9;
     }
     100% {
-        color: #43291F;
+        color: #d4f2d2;
     }
 }
 
-.home .left p {
+.home p {
     font-size: 18px;
-}
-
-.home .right {
-    margin-left: 20px;
-    width: 300px;
-}
-
-.home .right img {
-    width: 100%;
+    color: #fff;
 }
 
 /* About us */
@@ -285,10 +274,17 @@ hr {
 }
 
 .founder-msg .founder-text {
+    width: calc(100vw - 500px);
     font-size: 18px;
     font-weight: 400;
     margin-top: 15px;
     padding-bottom: 40px;
+    text-align: justify;
+}
+
+.founder-msg .founder-text span {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .founder-msg .right {
@@ -297,7 +293,9 @@ hr {
 }
 
 .founder-msg .right img {
-    width: 330px;
+    width: 300px;
+    margin-bottom: 42px;
+    border-radius: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -389,6 +387,7 @@ hr {
     .home h5 {
         font-size: 23px;
         margin-top: 25px;
+        text-align: center;
     }
     .home p {
         display: flex;
@@ -397,8 +396,5 @@ hr {
         text-align: center;
         white-space: normal;
         margin-top: 20px;
-    }
-    .founder-msg .right {
-	margin-bottom: 25px;
     }
 }
