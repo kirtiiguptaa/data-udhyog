@@ -197,6 +197,7 @@ hr {
     font-size: 18px;
     font-weight: 400;
     margin-top: 15px;
+    text-align: justify;
 }
 
 .company-overview .brand-value {
@@ -217,6 +218,7 @@ hr {
 .brand-value ul li {
     font-size: 20px;
     font-weight: 600;
+    text-align: justify;
 }
 
 .brand-value ul li span {
@@ -246,6 +248,7 @@ hr {
 .mission-vision .vision-text {
     font-size: 18px;
     font-weight: 400;
+    text-align: justify;
 }
 
 .founder-msg {
@@ -379,10 +382,10 @@ hr {
 }
 
 @media (max-width: 400px) {
-    .home .left {
-        margin-top: 45px;
-        margin-left: 5px;
-        margin-right: 0;
+    .home {
+        position: relative;
+        height: calc(100vh - 80px);
+        top: 80px;
     }
     .home h5 {
         font-size: 23px;
@@ -396,5 +399,12 @@ hr {
         text-align: center;
         white-space: normal;
         margin-top: 20px;
+    }
+    .about-us {
+        height: 100%;
+        padding: 80px 20px;
+    }
+    .founder-msg .founder-text {
+        width: 100%;
     }
 }
