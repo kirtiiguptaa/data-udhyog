@@ -5,81 +5,392 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataUdyog | Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+  integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+  integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+/>
 </head>
 <body>
-    <div class="container">
+    <div class="main-container">
         <header>
             <div class="logo">
                 <a href="#"><img src="images/logo.jpg" alt=""></a>
             </div>
-            <div class="toggle-btn" id="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <nav>
-                <ul class="nav-items" id="menu-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#about-us" class="drop-btn">About Us</a>
-                        <div class="dropdown-content">
-                            <a href="#company-overview" class="drop-list">Company Overview</a>
-                            <a href="#mission-vision" class="drop-list">Mission and Vision</a>
-                            <a href="#founder-msg" class="drop-list">Founder's Message</a>
-                        </div>
+            <button class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <nav class="nav-lists">
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="#">About Us <span class="arrow"><i class="fa-solid fa-angle-down"></i></span></a>
+                        <ul class="dropdown-menu first">
+                            <li><a href="#">Group Overview</a></li>
+                            <li><a href="#">Purpose, Vision, Mission & Values</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Founder's Message</a></li>
+                            <li><a href="#">Legal</a></li>
+                        </ul>
                     </li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#media">Media</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </nav>
+                     <li class="nav-item dropdown">
+                         <a href="#">Products <span class="arrow"><i class="fa-solid fa-angle-down"></i></span></a>
+                         <ul class="dropdown-menu first">
+                             <li><a href="#">Tempcore TMT Rebars</a></li>
+                             <li><a href="#">Zinc Coat Tempcore TMT Bars</a></li>
+                             <li><a href="#">Pipe & Tube</a></li>
+                             <li><a href="#">GP Coil</a></li>
+                             <li><a href="#">Wire Rods</a></li>
+                             <li><a href="#"> Binding Wire</a></li>
+                             <li><a href="#">Billets</a></li>
+                             <li><a href="#">Round - Dowel Bars</a></li>
+                         </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a href="#">Services <span class="arrow"><i class="fa-solid fa-angle-down"></i></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Design Book</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a href="#">Infrastructure <span class="arrow"><i class="fa-solid fa-angle-down"></i></span></a>
+                         <ul class="dropdown-menu">
+                             <li><a href="#">TMT Unit</a></li>
+                             <li><a href="#">Pipe & Tube Unit</a></li>
+                             <li><a href="#">Zn Coat Coil</a></li>
+                             <li><a href="#">Corporate Office</a></li>
+                         </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                         <a href="#">Quality <span class="arrow"><i class="fa-solid fa-angle-down"></i></span></a>
+                         <ul class="dropdown-menu">
+                            <li><a href="#">IQMS Overview</a></li>
+                            <li><a href="#">EHS</a></li>
+                            <li><a href="#">Approval</a></li>
+                            <li><a href="#">Certifications</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a href="#">Media <span class="arrow"><i class="fa-solid fa-angle-down"></i></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Press release </a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">End customer</a>
+                    </li>
+                     <li class="nav-item dropdown">
+                         <a href="#">Career <span class="arrow"><i class="fa-solid fa-angle-down"></i></span></a>
+                         <ul class="dropdown-menu">
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Opportunity</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a href="#">Csr <span class="arrow"><i class="fa-solid fa-angle-down"></i></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">CSR Policy</a></li>
+                            <li><a href="#">CSR Initiatives</a></li>
+                            <li><a href="#">MKRG Skill Centre</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Contact</a>
+                    </li>
+                 </ul>
+     
+             </nav>
         </header>
 
-        <section id="home" class="home">
+        <section class="home">
+            <div class="home-img">
+                <img src="images/j-tmt.jpg" alt="" class="img-fluid">
+            </div>
             <h1 class="main-heading">Welcome to Data Udyog</h1>
-            <h5>Your reliable partner in steel manufacturing...</h5>
+            <!-- <h5>Your reliable partner in steel manufacturing...</h5>
             <p>Premium Leading Manufacturers of Mild Steel CHANNEL
-                    100% Quality, Strength and Finishing</p>
+                    100% Quality, Strength and Finishing</p> -->
         </section>
 
-        <section id="about-us" class="about-us">
-            <div class="company-overview" id="company-overview">
-                <h3 class="company-heading">Company Overview</h3>
-                <hr>
-                <p class="company-text">Welcome to Data Udyog, the cornerstone of excellence in the steel manufacturing industry. With a rich legacy of innovation and quality, we have been at the forefront of supplying ISI Standard Angles and Channels, along with a comprehensive stock of MS Flat Bars, Rounds, and Squares. Our commitment to excellence has made us a trusted partner for industrial builders, contractors, and traders across the globe. At Data Udog, we are dedicated to supporting the backbone of the industrial sector with our robust and high-quality steel products.</p>
-                <div class="brand-value">
-                    <h4 class="brand-title">Brand Values</h4>
-                    <ul class="brand-list">
-                        <li class="list-content">Integrity: <span>We believe in doing business with uncompromising integrity, honesty, and fairness.</span></li>
-                        <li class="list-content">Innovation: <span>Our journey is marked by a continuous quest for innovation, striving to find better solutions for our clients.</span></li>
-                        <li class="list-content">Quality: <span>At the heart of Data Udog is an unwavering commitment to quality. We adhere to the highest standards, ensuring our products exceed expectations.</span></li>
-                        <li class="list-content">Sustainability: <span>We are dedicated to sustainable practices, minimizing our environmental impact while maximizing efficiency.</span></li>
-                        <li class="list-content">Customer Focus: <span>Our customers are our top priority. We listen, understand, and anticipate their needs to provide unparalleled service and support.</span></li>
-                    </ul>
-                </div>
+        <div class="brand-top">
+            <div class="brand-topinfo">
+                <h5>Our Brand</h5>
+                <p>Over the years, our products have undergone tremendous changes, and the objective of each change has been the same - to further better the quality of our products. We are a Quality-oriented organization and therefore, our focus is constantly on enhancing the durability, efficiency and functionality of our products. To complement our attitude is a work culture that allows innovation and creativity. The work culture is grounded in a value system that believes in fulfilling promises made to customers, channel partners, business associates, team members and stakeholders.</p>
             </div>
-            <div id="mission-vision" class="mission-vision">
-                <h3 class="tittle">Mission and Vision</h3>
-                <hr>
-                <h4 class="mission-heading">Mission:</h4>
-                <p class="mission-text">To empower and transform the industrial sector with superior quality steel products. Our mission is driven by the ambition to innovate and lead with services that exceed expectations, ensuring every project we touch is built on a foundation of reliability and excellence.</p>
-                <h4 class="vision-heading">Vision:</h4>
-                <p class="vision-text">Data Udyog envisions being the global leader in the steel manufacturing industry, recognized for our commitment to quality, innovation, and sustainability. We aim to be the preferred choice for industrial builders, contractors, and traders, contributing to their success with our dependable steel solutions.</p>
+            <div class="brand-logo">
+                <img src="images/logo.jpg" alt="" class="img-fluid">
             </div>
+        </div>
 
-            <div id="founder-msg" class="founder-msg">
-                <div class="left">
-                    <div class="founder-tittle">Founder's Message <span> - Jaghmohan Data</span></div>
-                    <hr>
-                    <p class="founder-text">"In the world of construction and manufacturing, steel is not just a material but a foundation of strength, trust, and innovation. At Data Udog, we take pride in our process, from selecting the finest billets to crafting steel products that stand the test of time. Our commitment to excellence begins at the very source, ensuring every piece of steel we produce is imbued with the confidence and quality our clients have come to expect. From our humble beginnings to becoming a leader in the industry, our journey has been driven by a vision to revolutionize and set new standards. To all our esteemed partners, I promise that with every product you receive from Data Udog, you're not just building structures but legacies of strength and confidence. Thank you for trusting us to be a part of your projects." - <span>Jaghmohan Data</span></p>
-                </div>
-                <div class="right">
-                    <img src="images/WhatsApp Image 2024-04-10 at 3.05.06 PM.jpeg" alt="">
+        <div class="container-fluid about-sec">
+            <div class="row">
+                <h1>Data Udyog</h1>
+                <div class="about-row">
+                    <div class="about-info">
+                        <div class="info-text">
+                            <div class="image-caption">
+                                <div class="image-caption-inner">
+                                    <h3>Data Udyog</h3>
+                                </div>
+                            </div>
+                            <h4>Description</h4>
+                            <p>Data Udyog are the main line of our operations. ‘Billets’ of international standards are created by employing advanced technology in an INTEGRATED STEEL PLANT. Billets are further used in the production of the Thermo Mechanically Treated (TMT) Bars. Hence, self-manufactured raw materials contribute to economical production and are is advantageous for the end user.</p>
+                            <p>The resultant Bars, with their malleability, ductility and HCR (High Corrosion Resistance) help in consistently maintaining our grades of the outcome and ensures customers’ satisfaction along with the desired quality.</p>
+                            <p>Today Data Udyog have a large scale presence across various corners on the country and continuously the spread is growing exponentially. This has been possible because of the wide product acceptability and a lead in repeat purchases. Withstanding the challenges in the Steel arena, Data Udyog have always stood prime in Quality and deliverance.</p>
+                            <div class="dwnld-btn">
+                                <a href="#">Download Brochure</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-img">
+                        <img src="images/tmt-side.jpg" alt="" class="img-fluid">
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="addition-info">
+            <div class="addition-info-col">
+                <div class="addition-info-content">
+                    <div class="addition-head">
+                        <img src="images/quality.png" alt="">
+                        <h5>High Quality</h5>
+                    </div>
+                    <p>Quality is not an act; it’s a habit of high intensions, sincere efforts intelligent direction and skill full execution. Our Pillar of strength is the refined organizational strength, able and highly qualified manpower. All this is what led us to a remarkable production capacity of 3 Laces tones per annum.</p>
+                </div>
+            </div>
+            <div class="addition-info-col">
+                <div class="addition-info-content">
+                    <div class="addition-head">
+                        <img src="images/trust.png" alt="">
+                        <h5>Customer Satisfaction</h5>
+                    </div>
+                    <p>Trust of the customer is our most precious assets and we go a long way in delivering the best of it. Be it any of our product it reflect harmony of Quality with trust.</p>
+                </div>
+            </div>
+            <div class="addition-info-col">
+                <div class="addition-info-content">
+                    <div class="addition-head">
+                        <img src="images/plant.png" alt="">
+                        <h5>Automatic German Plant</h5>
+                    </div>
+                    <p>Our Flagships product DATA UDYOG is the result of a world class plant that follows stringent norms diligently all this to gernate a sound trust and dependability in the minds of the structural designer of building. This results into a building design which ensures savings thereby, promising more values to the customer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-shortinfo">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h4>Data Udyog - Capacity</h4>
+                    </div>
+                    <div class="col-sm-7">
+                        <p>With an installed capacity of more than 3.5 Lacs per annum, we have the facility for providing TMT bar’s bundles ranging from 92 Kg to 3000 Kg as per the specific requirement of the customer. Further customization of length size is also available. Our unique facility offers length size customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-sec">
+            <h1>Features Of TMT</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/tmt-sideimg.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 offset-md-1">
+                        <a href="#" class="feature-btn">
+                            <div class="btn-text">Specification
+                                <p>More Information about TMT Properties.</p>
+                            </div>
+                            <div class="feature-button">Explore +</div>
+                        </a>
+                        <ul class="nav nav-tabs responsive">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link active" data-toggle="tab" role="tab" aria-selected="true">LRF Technology</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#profile" class="nav-link" data-toggle="tab" role="tab" aria-selected="false">Key Features</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content responsive">
+                            <div class="tab-pane active" id="home" role="tabpanel">
+                                <div class="file-area">
+                                   <div class="container-fluid">
+                                      <div class="row">
+                                         <div class="inner-prodspec">
+                                            <h4>LRF Description</h4>
+                                            <ul>
+                                               <li>Ladle refining of liquid metal is a proven technology to produce high quality steel.</li>
+                                               <li>A Ladle Refining Furnace is used to raise the temperature and adjust the chemical composition of molten metal.</li>
+                                               <li>Without LRFs, higher tap temperatures are normally required from steel making furnaces due to heat losses during refining with conventional ladles.</li>
+                                            </ul>
+                                             <h4>Features</h4>
+                                            <ul>
+                                               <li>Fully Automatic LRF</li>
+                                               <li>Phosphorous & Sulphur is controlled much better</li>
+                                               <li>Absolute removal of Harmful Gases (Oxygen, Hydrogen, Nitrogen)</li>
+                                               <li>Internal Defects which are not mention in BIS 2830 ( Billets ) are removed 100%</li>
+                                               <li>Heating process will be under controlled</li>
+                                               <li>30 Ton Capacity LRF.</li>
+                                            </ul>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>   
+                             </div>
+                             <div class="tab-pane" id="profile" role="tabpanel">
+                                <div class="file-area">
+                                   <div class="container-fluid">
+                                      <div class="row">
+                                         <div class="inner-prodspec">
+                                            <h4>Key Features</h4>
+                                            <ul>
+                                               <li>Corrosion Resistant</li>
+                                               <li>High Tensile Strength even at higher temperatures</li>
+                                               <li>100% purity levels</li>
+                                               <li> Detailed inspection at multiple production stages to feature end-user applications</li>
+                                               <li> Thorough assessment of all input materials to ensure desired specifications as desired by the customer</li>
+                                               <li> Monitored metallurgical operations</li>
+                                               <li> Statistical monitoring of results to facilitate systematic elimination of deviations, if any</li>
+                                               <li> Excellent Bond Strength, Earthquake Resistance &Outstanding Weld ability</li>
+                                            </ul>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>   
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block col-md-2">
+                        <div class="ft-link">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Vision & Mission</a></li>
+                                <li><a href="#">CSR</a></li>
+                                <li><a href="#">Media</a></li>
+                                <li><a href="#">Design book</a></li>
+                                <li><a href="#">Certification</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <div class="co-add">
+                            <h6>Corporate office:</h6>
+                            <p>V.P.O. Kumbh Road, Amloh Rd, <br> Opp. to Mewa Motors,<br>Mandi Gobindgarh, Punjab 147301
+                                <br>
+                                <strong>T</strong>: +91 93576 23480
+                                <br>
+                                <a href="mailto:info.dataudyog@gmail.com">info.dataudyog@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <div class="co-add">
+                            <h6>Registered office:</h6>
+                            <p>V.P.O. Kumbh Road, Amloh Rd, <br> Opp. to Mewa Motors,<br>Mandi Gobindgarh, Punjab 147301
+                                <br>
+                                <strong>T</strong>: +91 93576 23480
+                                <br>
+                                <a href="mailto:info.dataudyog@gmail.com">info.dataudyog@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3">
+                        <div class="co-add">
+                            <h6>Work office:</h6>
+                            <p>V.P.O. Kumbh Road, Amloh Rd, <br> Opp. to Mewa Motors,<br>Mandi Gobindgarh, Punjab 147301
+                                <br>
+                                <strong>T</strong>: +91 93576 23480
+                                <br>
+                                <a href="mailto:info.dataudyog@gmail.com">info.dataudyog@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="social-icon">
+                            <ul>
+                                <li class="d-circle">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="d-circle">
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                </li>
+                                <li class="d-circle">
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                                <li class="d-circle">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li class="d-circle">
+                                    <a href="#"><i class="fab fa-blogger"></i></a>
+                                </li>
+                                <li class="d-circle">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright">© Data Udyog. <a href="#">Privacy Policy</a>  | Designed by: <a href="https://techtideweb.netlify.app/" target="_blank">TechTideWeb</a> </div>
+                </div>
+            </div>
+        </footer>
         
     </div>
 
     <script src="js/script.js"></script>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<!-- Include Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Include Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
