@@ -811,6 +811,7 @@ header .logo img {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 1rem 1.5rem;
     }
     .feature-btn .btn-text {
         font-size: 15px;
