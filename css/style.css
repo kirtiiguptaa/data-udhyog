@@ -841,6 +841,9 @@ header .logo img {
     .brand-topinfo {
         padding: 1em;
     }
+    .brand-logo {
+        width: 15%;
+    }
     .image-caption {
         left: -10px;
     }
