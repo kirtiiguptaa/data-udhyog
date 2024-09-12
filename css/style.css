@@ -773,6 +773,9 @@ header .logo img {
 }
 
 @media (max-width: 767px) {
+    .menu-icon {
+        right: 20px;
+    }
     .home h1 {
         font-size: 1.2em;
     }
