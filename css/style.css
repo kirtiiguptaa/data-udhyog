@@ -788,6 +788,9 @@ header .logo img {
     .info-text h4 {
         font-size: 1.4em;
     }
+    .addition-info-content {
+        padding: 1rem;
+    }
     .product-shortinfo {
         width: 85%;
         padding: 2em;
@@ -840,5 +843,6 @@ header .logo img {
     }
     .product-shortinfo {
         width: 90%;
+        padding: 1.5rem;
     }
 }
