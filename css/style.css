@@ -789,7 +789,7 @@ header .logo img {
         font-size: 1.4em;
     }
     .addition-info-content {
-        padding: 1rem;
+        padding: 1rem 1.5rem;
     }
     .product-shortinfo {
         width: 85%;
@@ -826,6 +826,9 @@ header .logo img {
     .features-sec .nav {
         flex-direction: column;
     }
+    .inner-prodspec ul {
+        margin: 0;
+    }
     .features-sec .nav-item {
         width: 100%;
     }
@@ -843,6 +846,9 @@ header .logo img {
     }
     .product-shortinfo {
         width: 90%;
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+    .product-shortinfo::before {
+        left: 20px;
     }
 }
